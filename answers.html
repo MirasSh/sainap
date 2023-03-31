@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Тест</title>
+    <script type="text/javascript" src="js/data.js"></script>
+    <style>
+        p, span, input {
+           font-size:24px;
+       }
+       button{
+        font-size:18px;
+    }
+    #vo {
+        color:green;
+    }
+    #nvo {
+        color:red;
+    }
+    #ot {
+        color:blue;
+    }
+</style>
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background-color:#d9ffd6;">
+
+    <h1 class="text_margin" align="center">Ответы на вопросы</h1> 
+
+
+
+    <div class="video_class">
+
+        <!-- Нужно поставить сюда видео  -->
+        <img src="img/2.10.gif"> сейчас пять часов
+        <img src="img/2.10.gif"> у меня все хорошо
+        <img src="img/2.10.gif"> с утра шел снег
+        <img src="img/2.10.gif"> меня зовут Антон
+        <img src="img/2.10.gif"> мне 20 лет
+
+ <p>Тут будет нами снятое видео </p>
+    </div>
+
+
+    <div>
+        <p><a href="#test"style="font-size: 30px;margin-left: 25%;">Пройти тестирование"Кнопка skip"</a></p>
+    </div>
+
+
+
+
+    <div style="margin-left: auto;margin-top: 25%; margin-right: auto;width: 600px;text-align:center;">
+        <p id="test">Тест. Тема. <span id="tema"></span>.</p>
+        <div id="vopros1" style="display:block;">
+            <p>Вопрос 1</p>
+            <p><span id="v_1"></span> <input type="text" id="z_1"></p>
+        </div>
+        <div id="vopros2" style="display:none;">
+            <p>Вопрос 2</p>
+            <p><span id="v_2"></span> <input type="text" id="z_2"></p>
+        </div>
+        <div id="vopros3" style="display:none;">
+            <p>Вопрос 3</p>
+            <p><span id="v_3"></span> <input type="text" id="z_3"></p>
+        </div>
+        <button id="kn_sl" onclick="sled_vopr();">Следующий вопрос</button>
+        <button id="kn_pr" style="display:none;" onclick="proverit();">Проверить</button>
+        <div id="rezultat"></div>
+    </div>
+
+    <input type="button" style="margin-top: 35%" onclick="document.location='mainWindow.html'"value="Вернутся к обучению"/>
+
+    <script src="js/test.js">
+
+    </script>
+
+</body>
+</html>
